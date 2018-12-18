@@ -10,6 +10,7 @@ tasks:
       body: "this si the message body"
       method: POST
       headers:
+        Content-Type: "application/json"
         username: viveksinghggits
     requires:
     - firstt
