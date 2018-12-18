@@ -1,0 +1,15 @@
+apiVersion: 1
+output: secondt
+tasks:
+  firstt:
+    run: firstfn
+
+  secondt:
+    run: secondfn
+    inputs: 
+      body: "this si the message body"
+      method: POST
+      headers:
+        username: viveksinghggits
+    requires:
+    - firstt
